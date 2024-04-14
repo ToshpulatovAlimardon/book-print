@@ -1,0 +1,273 @@
+﻿@import url(css);
+
+
+
+html {
+  font-family: 'Montserrat', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+:root {
+  --thompson-color: #d5900f;
+  --text-color: #e0e0e0;
+}
+
+body {
+  background: #F2F3EB;
+  color: var(--text-color);
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  width: 45%;
+  border: solid 4px  var(--thompson-color);
+  margin:   50px auto;
+  border-radius: 15px;
+  padding-bottom: 0px;
+  background-color: #7d74767b;
+  box-shadow: 0 0 10px 10px var(--thompson-color);
+}
+
+form {
+  padding: 17.5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color:  var(--text-color);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.underline {
+  border-bottom: solid 2px  var(--thompson-color);
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill:  var(--thompson-color);
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+
+
+input[type='number'], select {
+	background: none;
+  border: none;
+	border-bottom: solid 2px  var(--thompson-color);
+	color:  var(--text-color)!important;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 10px;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='number']:focus {
+	outline: none;
+	padding: 10px;
+}
+
+/* divider */
+.divider {
+  border-bottom: solid 2px  var(--thompson-color);
+  margin: 40px auto;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  /* background:  url('https://custombirthdaybanners.co.uk/wp-content/uploads/2017/11/arrow-down.png' )  no-repeat right center; */
+  color :  var(--thompson-color);
+  background-repeat: no-repeat;
+  background-size: 500%;
+  outline: none;
+  --moz-appearance: none;
+  --webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color:  var(--text-color);
+}
+
+:-moz-placeholder { 
+	color:  var(--text-color);
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color:  var(--text-color);
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color:  var(--text-color);
+}
+
+#form_button {
+  background: none;
+  border: solid 2px  var(--thompson-color);
+  color:  var(--thompson-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background:  var(--thompson-color);
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 1068px) {
+  #container {
+    margin: 20px auto;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+  #container {
+    margin: 20px auto;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='number'], select, textarea {
+    font-size: 0.875em;
+  }
+  #container {
+    margin: 20px auto;
+    width: 90%;
+  }
+}
+
+
+label {
+  background-color:  #229ED9;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+#file-chosen{
+  margin-left: 0.3rem;
+  font-family: sans-serif;
+  font-size: 24px;
+  color:   var(--thompson-color);
+}
+
+#actual-btn{
+  background-color:  var(--thompson-color);
+  
+}
+

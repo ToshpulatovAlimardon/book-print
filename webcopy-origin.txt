@@ -1,0 +1,88 @@
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\ajax\libs\font-awesome\4.7.0\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont-1.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.eot
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.ttf
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.woff2
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\ajax\libs\font-awesome\4.7.0\fonts\fontawesome-webfont.woff
+Content Type: application/octet-stream
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\ajax\libs\pdf.js\2.6.347\pdf.min.js
+Content Type: application/javascript
+
+Uri: https://e1.pxfuel.com/desktop-wallpaper/794/200/desktop-wallpaper-dark-winter-forest-dark-winter-high.jpg
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\desktop-wallpaper\794\200\desktop-wallpaper-dark-winter-forest-dark-winter-high.jpg
+Content Type: image/jpeg
+
+Uri: https://fonts.googleapis.com/css?family=Montserrat:400,700
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\css
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\s\montserrat\v26\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\s\montserrat\v26\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf
+Content Type: font/ttf
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\font-awesome\4.4.0\css\font-awesome.min.css
+Content Type: text/css
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\font-awesome\4.4.0\fonts\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.eot?v=4.4.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\font-awesome\4.4.0\fonts\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.svg?v=4.4.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\font-awesome\4.4.0\fonts\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf?v=4.4.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\font-awesome\4.4.0\fonts\fontawesome-webfont.ttf
+Content Type: font/ttf
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\font-awesome\4.4.0\fonts\fontawesome-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.woff?v=4.4.0
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\font-awesome\4.4.0\fonts\fontawesome-webfont.woff
+Content Type: font/woff
+
+Uri: https://printzone.uz/
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\index.htm
+Content Type: text/html
+
+Uri: https://printzone.uz/style.css
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\style.css
+Content Type: text/css
+
+Uri: https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js
+File Name: C:\Users\ASUS\Desktop\Новая папка\printzone.uz\sweetalert@2.1.2\dist\sweetalert.min.js
+Content Type: application/javascript
+

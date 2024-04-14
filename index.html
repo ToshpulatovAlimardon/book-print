@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrintZone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="font-awesome/4.4.0/css/font-awesome.min.css" />
+  </head>
+
+  <body
+    style="
+      background-image: url('desktop-wallpaper/book-shelves.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
+    <div id="container">
+      <h1 style="font-size: 21px; font-weight: 900">
+        &bull; THOMPSON PRINT &bull;
+      </h1>
+      <div class="underline"></div>
+
+      <form action="" id="contact_form" autocomplete="off">
+        <input type="file" id="actual-btn" accept=".pdf" hidden="" />
+
+        <!-- our custom upload button -->
+        <label for="actual-btn" style="background-color: var(--thompson-color)"
+          >Choose File</label
+        >
+
+        <!-- name of file chosen -->
+        <span
+          id="file-chosen"
+          style="
+            font-weight: 500;
+            font-size: 18px;
+            height: 20px;
+            line-height: 20px;
+            color: rgb(226, 211, 76);
+          "
+        ></span>
+        <br />
+        <br />
+
+        <div class="telephone2">
+          <input
+            type="number"
+            placeholder="Betlarining Soni..."
+            name="telephone"
+            id="telephone_input"
+            onchange="hisoblash"
+            autocomplete="on"
+            onclick="hisoblash"
+          />
+        </div>
+
+        <div class="subject">
+          <select name="subject" id="subject_input" class="qogoz">
+            <option value="1">A5 - oq qora</option>
+            <option value="2">A4 - oq qora</option>
+            <option value="3">A5 - rangli</option>
+            <option value="4">A4 - rangli</option>
+          </select>
+        </div>
+        <div class="subject">
+          <select name="subject" id="subject_input" class="jild">
+            <option value="1">Oddiy Pereplyot</option>
+            <option value="2">Temir Pereplyot</option>
+            <option value="3">Kley (Termokley)</option>
+            <option value="4">Qattiq muqova</option>
+          </select>
+        </div>
+
+        <p style="font-weight: 600">- A5 kitobcha</p>
+
+        <p style="font-weight: 600">- A4 katta</p>
+
+        <h1 style="font-size: 14px; font-weight: 600">Narx:</h1>
+        <h1 id="narx" style="font-size: 14px; font-weight: 600">0 so'm</h1>
+
+        <div class="divider"></div>
+
+        <center>
+          <!-- <u style="color: #fff"> -->
+          <p
+            style="
+              font-weight: 500;
+              font-size: 20px;
+              height: 20px;
+              line-height: 20px;
+            "
+          >
+            Batafsil -
+            <a
+              href="https://t.me/Abbos_Otabekovich"
+              style="color: var(--thompson-color); text-decoration: none;"
+              ><i
+                class="fa fa-telegram"
+                style="font-size: 18px; color: #fff"
+              >
+              </i>
+              @Abbos_Otabekovich</a
+            >
+          </p>
+        </center>
+      </form>
+    </div>
+  </body>
+  <script src="sweetalert%402.1.2/dist/sweetalert.min.js"></script>
+  <script
+    src="ajax/libs/pdf.js/2.6.347/pdf.min.js"
+    integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("change", function () {
+      hisoblash();
+    });
+
+    var telephone_input = document.getElementById("telephone_input");
+
+    //Attach the event listener to the element
+    telephone_input.oninput = (event) => {
+      hisoblash();
+    };
+
+    function toMoneyStyle(value) {
+      return value
+        .toFixed(2)
+        .replace(/\d(?=(\d{3})+\.)/g, "$&,")
+        .split(".")[0]
+        .replaceAll(",", " ");
+    }
+    function hisoblash() {
+      console.log("ishladi");
+      let kitobBetlarSoni = document.getElementById("telephone_input").value;
+      let qogoz = document.querySelector(".qogoz").value;
+      let jild = document.querySelector(".jild").value;
+
+      switch (jild) {
+        case "1":
+          jild = 7000;
+          break;
+        case "2":
+          jild = 9000;
+          break;
+        case "3":
+          jild = 10000;
+          break;
+        case "4":
+          jild = 28000;
+          break;
+      }
+
+      jild = jild * (Math.floor((kitobBetlarSoni - 1) / 220) + 1);
+
+      let narxH1 = document.getElementById("narx");
+
+      let qogozNarx = 0;
+
+      if (parseInt(kitobBetlarSoni) > 99) {
+        switch (parseInt(qogoz)) {
+          case 1:
+            qogozNarx = 60;
+            break;
+          case 2:
+            qogozNarx = 119;
+            break;
+          case 3:
+            qogozNarx = 70;
+            break;
+          case 4:
+            qogozNarx = 119;
+            break;
+        }
+
+        // switch (parseInt(qogoz)) {
+        //     case 1:
+        //         qogozNarx = 70;
+        //         break;
+        //     case 2:
+        //         qogozNarx = 140;
+        //         break;
+        //     case 3:
+        //         qogozNarx = 120;
+        //         break;
+        //     case 4:
+        //         qogozNarx = 230;
+        //         break;
+
+        // }
+      } else if (parseInt(kitobBetlarSoni) > 49) {
+        qogozNarx = 200;
+      } else if (parseInt(kitobBetlarSoni) > 29) {
+        qogozNarx = 500;
+      } else if (parseInt(kitobBetlarSoni) > 4) {
+        qogozNarx = 1000;
+      } else {
+        qogozNarx = 2000;
+      }
+
+      if (kitobBetlarSoni != "") {
+        if (parseInt(kitobBetlarSoni) < 100) {
+          narxH1.innerHTML = `<h1 id="narx" style="font-size: 14px; font-weight: 600" >
+                ${kitobBetlarSoni}x${toMoneyStyle(qogozNarx)} = ${toMoneyStyle(
+            parseInt(kitobBetlarSoni * qogozNarx)
+          )} so'm (Preplyotsiz)
+            </h1>`;
+        } else {
+          narxH1.innerHTML = `<h1 id="narx" style="font-size: 14px; font-weight: 600" >
+                ${kitobBetlarSoni}x${toMoneyStyle(qogozNarx)}+${toMoneyStyle(
+            parseInt(jild)
+          )}= ${toMoneyStyle(parseInt(kitobBetlarSoni * qogozNarx + jild))} so'm
+            </h1>`;
+          // Math.floor((kitobBetlarSoni - 1) / 100) * 1000
+        }
+      } else {
+        narxH1.innerHTML = ` <h1 id="narx" style="font-size: 14px; font-weight: 600 ">
+                0 so'm
+            </h1>`;
+      }
+    }
+
+    function readFile(file) {
+      return new Promise((resolve, reject) => {
+        // Create file reader
+        let reader = new FileReader();
+
+        // Register event listeners
+        reader.addEventListener("loadend", (e) => resolve(e.target.result));
+        reader.addEventListener("error", reject);
+
+        // Read file
+        reader.readAsArrayBuffer(file);
+      });
+    }
+
+    const actualBtn = document.getElementById("actual-btn");
+
+    const fileChosen = document.getElementById("file-chosen");
+
+    actualBtn.onchange = async (event) => {
+      // let pdfjs =  import('pdfjs-dist/build/pdf');
+      // let pdfjsWorker =  import('pdfjs-dist/build/pdf.worker.entry');
+
+      // pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+
+      var file = event.target.files[0];
+
+      // application/pdf
+      console.log(file);
+
+      console.log(file.type);
+      if (file.type == "application/pdf") {
+        fileChosen.textContent = file.name;
+
+        var reader = new FileReader();
+        // reader.readAsBinaryString(this.files[0]);
+        reader.onloadend = async () => {
+          // console.log(">>>> 1")
+          // console.log(this.result)
+          var typeArray = new Uint8Array(await readFile(file));
+
+          const task = pdfjsLib.getDocument(typeArray);
+          // console.log(">>>> 2")
+          // console.log(typeArray)
+          // console.log(task.promise)
+
+          task.promise.then((pdf) => {
+            // console.log(pdf.numPages)
+            document.getElementById("telephone_input").value = pdf.numPages;
+            hisoblash();
+          });
+        };
+        await reader.readAsBinaryString(file);
+      } else {
+        fileChosen.textContent = "Pdf file yuklang";
+        document.getElementById("telephone_input").value = "";
+      }
+    };
+  </script>
+</html>
